@@ -2,5 +2,5 @@ using MyPrettyPackage
 using Test
 
 @testset "MyPrettyPackage.jl" begin
-    # Write your tests here.
+    @test pretty_func("WoW!", emoji = "🍋") == "WoW! 🍋"
 end
